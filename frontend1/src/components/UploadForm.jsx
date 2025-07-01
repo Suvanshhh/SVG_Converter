@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './UploadForm.css';
 
 const UploadForm = ({ onSVG }) => {
   const [file, setFile] = useState(null);

@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #e4e3fd 0%, #f7f7fa 100%);
   min-height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  max-width: 540px;
+  margin: 60px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(80, 60, 180, 0.12), 0 1.5px 4px rgba(60, 60, 60, 0.07);
+  padding: 32px 36px 40px 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  text-align: center;
+  margin-bottom: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #724ae8;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 1.03rem;
+  margin-bottom: 10px;
+}
+
+.result-container {
+  margin-top: 2rem;
+  border: 1px solid #eee;
+  padding: 1.2rem;
+  border-radius: 12px;
+  background: #f7f7fa;
+  box-shadow: 0 1px 6px rgba(114, 74, 232, 0.06);
+  width: 100%;
+}
+
+.svg-preview {
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.download-link {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(90deg, #724ae8 0%, #a084ee 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.download-link:hover {
+  background: linear-gradient(90deg, #a084ee 0%, #724ae8 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.placeholder {
+  text-align: center;
+  color: #7f8c8d;
+  margin: 2rem 0;
+}
+
+.error-message {
+  color: #e74c3c;
+  background: #fadbd8;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    max-width: 98vw;
+    padding: 18px 8px 24px 8px;
   }
-  to {
-    transform: rotate(360deg);
+  h1 {
+    font-size: 1.4rem;
+  }
+  .svg-preview {
+    padding: 8px;
   }
 }
