@@ -6,7 +6,7 @@ from PIL import Image
 import io
 from transformers import AutoModelForCausalLM
 
-MODEL_NAME = "starvector/starvector-1b-im2svg"  # CHANGED to 1B model
+MODEL_NAME = "starvector/starvector-1b-im2svg" 
 
 def load_model():
     model = AutoModelForCausalLM.from_pretrained(

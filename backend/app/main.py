@@ -9,7 +9,7 @@ app = FastAPI()
 graphql_app = GraphQLRouter(schema)
 app.include_router(graphql_app, prefix="/graphql")
 
-# CORS for React dev server
+# CORS for middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000"],
